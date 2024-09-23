@@ -1,5 +1,6 @@
 package com.example.mad1;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 textView2.setText("Halal Madrid!");
+            }
+        });
+        Button button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                textView2.setTextColor(Color.RED);
             }
         });
 
